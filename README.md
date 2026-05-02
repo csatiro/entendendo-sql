@@ -10,11 +10,17 @@ Além disso, são explorados comandos essenciais como SELECT, FROM e WHERE, fund
 Os principais objetivos deste caderno temático são:
 
 > Compreender os conceitos básicos da linguagem SQL e sua importância no contexto da análise de dados;
+
 > Aprender a estruturar consultas utilizando comandos fundamentais;
+
 > Entender o funcionamento de relacionamentos entre tabelas por meio de chaves primárias e estrangeiras;
+
 > Aplicar diferentes tipos de joins para combinar dados de múltiplas tabelas;
+
 > Utilizar funções de agregação e filtros condicionais para gerar informações relevantes;
+
 > Desenvolver a capacidade de transformar dados brutos em informações úteis para tomada de decisão;
+
 > Incentivar a prática contínua como meio de consolidar o aprendizado e evoluir na área de dados.
 
 O material também apresenta referências e ferramentas práticas que auxiliam no aprendizado, reforçando a importância do SQL no mercado de trabalho,
