@@ -31,9 +31,12 @@ especialmente em empresas de tecnologia e áreas orientadas a dados. A proposta 
 As seguintes fontes foram selecionadas para compor o caderno temático, com o objetivo de fornecer uma base teórica e prática sobre SQL, incluindo materiais em PDF e conteúdos audiovisuais:
 
 📄 Material 1 (PDF) – Introdução à linguagem SQL e conceitos fundamentais (arquivo disponível no repositório)
+
 📄 Material 2 (PDF) – Consultas avançadas, joins e manipulação de dados (arquivo disponível no repositório)
+
 🎥 Vídeo 1 – SQL Saia do ZERO em APENAS UMA AULA
 https://www.youtube.com/watch?v=OFLMhFuArXQ
+
 🎥 Vídeo 2 – Curso SQL Completo 2025
 https://www.youtube.com/watch?v=G7bMwefn8RQ
 
