@@ -46,7 +46,7 @@ Durante o desenvolvimento deste caderno temático, foram testadas diferentes abo
 
 **🔍 Prompt 1 – Conceito de SQL**
 
-Antes (vaga): “O que é SQL e para que serve?”
+> Antes (vaga): “O que é SQL e para que serve?”
 
 Resposta obtida:
 SQL é uma linguagem usada para gerenciar bancos de dados, permitindo consultar e manipular informações.
@@ -54,7 +54,7 @@ SQL é uma linguagem usada para gerenciar bancos de dados, permitindo consultar 
 Comentário (análise crítica):
 A resposta foi correta, porém muito genérica e superficial. Faltou contexto prático e aplicação no mercado de trabalho, o que limita o aprendizado.
 
-Depois (refinada): “Explique o que é SQL com foco em análise de dados e sua importância no mercado de trabalho.”
+> Depois (refinada): “Explique o que é SQL com foco em análise de dados e sua importância no mercado de trabalho.”
 
 Resposta obtida:
 SQL é uma linguagem utilizada para gerenciar e consultar bancos de dados relacionais. Na análise de dados, ela permite extrair, filtrar e organizar grandes volumes de informação de forma eficiente. Seu uso é essencial em empresas que trabalham com dados, pois possibilita transformar dados brutos em insights estratégicos para tomada de decisão.
@@ -66,7 +66,7 @@ Ao especificar o contexto (análise de dados e mercado), a resposta se tornou ma
 
 **🔍 Prompt 2 – Estrutura de Consultas**
 
-Antes (vaga): “Explique SQL”
+> Antes (vaga): “Explique SQL”
 
 Resposta obtida:
 SQL é uma linguagem usada para consultar bancos de dados.
@@ -74,14 +74,17 @@ SQL é uma linguagem usada para consultar bancos de dados.
 Comentário (análise crítica):
 A resposta foi excessivamente simples e não trouxe exemplos, dificultando a compreensão prática.
 
-Depois (refinada): “Explique SQL com exemplos práticos voltados para iniciantes na área de dados.”
+> Depois (refinada): “Explique SQL com exemplos práticos voltados para iniciantes na área de dados.”
 
 Resposta obtida:
 SQL é usado para consultar dados armazenados em tabelas. Por exemplo, o comando SELECT permite escolher quais colunas visualizar, enquanto o WHERE filtra os resultados.
 
 Exemplo:
+
 SELECT nome, idade
+
 FROM clientes
+
 WHERE idade > 18;
 
 Essa consulta retorna os nomes e idades dos clientes maiores de 18 anos.
@@ -93,7 +96,7 @@ A inclusão de exemplos práticos e a definição do nível (iniciante) tornaram
 
 **🔍 Prompt 3 – JOINs**
 
-Antes (vaga): “Explique JOINs em SQL”
+> Antes (vaga): “Explique JOINs em SQL”
 
 Resposta obtida:
 JOINs são usados para juntar tabelas.
@@ -101,14 +104,17 @@ JOINs são usados para juntar tabelas.
 Comentário (análise crítica):
 A resposta foi incompleta e não explicou como nem quando utilizar JOINs, além de não apresentar exemplos.
 
-Depois (refinada): “Explique JOINs em SQL de forma simples, com exemplos práticos.”
+> Depois (refinada): “Explique JOINs em SQL de forma simples, com exemplos práticos.”
 
 Resposta obtida:
 JOINs são utilizados para combinar dados de duas ou mais tabelas com base em uma coluna em comum.
 
 Exemplo de INNER JOIN:
+
 SELECT clientes.nome, pedidos.valor
+
 FROM clientes
+
 INNER JOIN pedidos ON clientes.id = pedidos.cliente_id;
 
 Esse comando retorna os nomes dos clientes junto com os valores de seus pedidos.
@@ -120,7 +126,7 @@ A resposta passou a incluir explicação clara e exemplo prático, facilitando o
 
 **🔍 Prompt 4 – Funções e Filtros**
 
-Antes (vaga): “Me fale sobre funções SQL”
+> Antes (vaga): “Me fale sobre funções SQL”
 
 Resposta obtida:
 Funções SQL servem para fazer cálculos.
@@ -128,20 +134,25 @@ Funções SQL servem para fazer cálculos.
 Comentário (análise crítica):
 Resposta muito ampla e pouco explicativa, sem exemplos ou detalhamento.
 
-Depois (refinada): “Mostre exemplos de consultas SQL usando SELECT, WHERE e funções de agregação, explicando de forma simples.”
+> Depois (refinada): “Mostre exemplos de consultas SQL usando SELECT, WHERE e funções de agregação, explicando de forma simples.”
 
 Resposta obtida:
 Funções de agregação permitem realizar cálculos em conjuntos de dados.
 
 Exemplo:
+
 SELECT COUNT(*) AS total_clientes
+
 FROM clientes;
 
 Conta o número total de clientes.
 
 Outro exemplo:
+
 SELECT AVG(salario) AS media_salarial
+
 FROM funcionarios
+
 WHERE setor = 'Vendas';
 
 Calcula a média salarial dos funcionários do setor de vendas.
@@ -152,8 +163,11 @@ A resposta se tornou mais completa e aplicada, com exemplos claros e explicaçõ
 ⚠️ Principais “Cicatrizes” do Processo:
 
 1 - Prompts vagos geraram respostas genéricas e pouco úteis;
+
 2 - Falta de exemplos dificultou o aprendizado prático;
+
 3 - Respostas iniciais nem sempre vinham no nível adequado (iniciante);
+
 4 - Foi necessário iterar e ajustar constantemente os prompts.
 
 **📘 Miniguia de Estudo – SQL**
@@ -166,22 +180,35 @@ Por fim, o domínio de SQL é essencial na área de dados, pois possibilita tran
 📖 Glossário: 
 
 SQL (Structured Query Language): Linguagem usada para gerenciar bancos de dados relacionais.
+
 Tabela: Estrutura que armazena dados em linhas e colunas.
+
 SELECT: Comando utilizado para selecionar dados de uma tabela.
+
 WHERE: Cláusula utilizada para filtrar dados com base em condições.
+
 JOIN: Operação que combina dados de duas ou mais tabelas.
+
 INNER JOIN: Retorna apenas os registros que possuem correspondência em ambas as tabelas.
+
 LEFT JOIN: Retorna todos os registros da tabela da esquerda, mesmo sem correspondência.
+
 Chave Primária (Primary Key): Identificador único de um registro em uma tabela.
+
 Chave Estrangeira (Foreign Key): Campo que faz referência à chave primária de outra tabela.
+
 Funções de Agregação: Funções que realizam cálculos em conjuntos de dados (ex: COUNT, AVG).
 
 🤖 Prompts Reutilizáveis:
-Abaixo estão alguns prompts que podem ser reutilizados para revisão e aprofundamento do tema:
 
 “Explique [conceito SQL] de forma simples, como para iniciantes, com exemplos práticos.”
+
 “Crie exercícios práticos de SQL com nível iniciante e mostre as respostas.”
+
 “Explique a diferença entre [INNER JOIN, LEFT JOIN, RIGHT JOIN] com exemplos.”
+
 “Me dê exemplos de consultas SQL usando SELECT, WHERE e funções de agregação.”
+
 “Simule um cenário real de análise de dados e mostre como resolver usando SQL.”
+
 “Revise esse código SQL e explique o que ele faz passo a passo.”
